@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DionProjes</title>
+
+    <!-- Meta Verification ya PropellerAds -->
+    <meta name="propeller" content="your-verification-code-here">
+
     <style>
         /* Reset some default styles */
         body, h1, h2, p, ul, li {
@@ -120,6 +124,15 @@
             margin: 0;
         }
     </style>
+
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/Dion/sw.js')
+        .then(reg => console.log("✅ Service Worker Registered!", reg))
+        .catch(err => console.log("❌ Service Worker Registration Failed!", err));
+      }
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -156,7 +169,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 Dion's App. All rights reserved.</p>
+            <p>&copy; 2025 Dion's App. All rights reserved.</p>
         </div>
     </footer>
 </body>
